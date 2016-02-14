@@ -36,4 +36,12 @@
     <servlet-name>Registrar</servlet-name>
     <url-pattern>/Registrar.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>EliminarContacto</servlet-name>
+    <servlet-class>me.ujosue.agenda.servlet.EliminarContacto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminarContacto</servlet-name>
+    <url-pattern>/EliminarContacto.do</url-pattern>
+  </servlet-mapping>
 </web-app>
