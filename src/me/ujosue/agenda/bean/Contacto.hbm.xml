@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="me.ujosue.agenda.bean.Contacto" table="Contacto">
+	    <id name="idContacto" type="java.lang.Integer">
+            <column name="idContacto" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="java.lang.String">
+            <column name="nombre" />
+        </property>
+        <property name="telCasa" type="java.lang.Integer">
+            <column name="telCasa" />
+        </property>
+        <property name="telMovil" type="java.lang.Integer">
+            <column name="telMovil" />
+        </property>
+        <property name="correo" type="java.lang.String">
+            <column name="correo" />
+        </property>
+        <property name="direccion" type="java.lang.String">
+            <column name="direccion" />
+        </property>
+        <many-to-one name="idUsuario" class="me.ujosue.agenda.bean.Usuario" lazy="false">
+        		<column name="idUsuario"></column>
+        </many-to-one>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>AgendaHibernate</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>AgregarContacto</servlet-name>
+    <servlet-class>me.ujosue.agenda.servlet.AgregarContacto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AgregarContacto</servlet-name>
+    <url-pattern>/AgregarContacto.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>me.ujosue.agenda.servlet.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CerrarSesion</servlet-name>
+    <servlet-class>me.ujosue.agenda.servlet.CerrarSesion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CerrarSesion</servlet-name>
+    <url-pattern>/CerrarSesion.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Registrar</servlet-name>
+    <servlet-class>me.ujosue.agenda.servlet.Registrar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registrar</servlet-name>
+    <url-pattern>/Registrar.do</url-pattern>
+  </servlet-mapping>
+</web-app>
