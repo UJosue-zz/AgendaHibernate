@@ -7,7 +7,7 @@ public class Contacto {
 	private Integer telMovil;
 	private String correo;
 	private String direccion;
-	private Integer idUsuario;
+	private Usuario idUsuario;
 	public Integer getIdContacto() {
 		return idContacto;
 	}
@@ -44,15 +44,15 @@ public class Contacto {
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
-	public Integer getIdUsuario() {
+	public Usuario getIdUsuario() {
 		return idUsuario;
 	}
-	public void setIdUsuario(Integer idUsuario) {
+	public void setIdUsuario(Usuario idUsuario) {
 		this.idUsuario = idUsuario;
 	}
 	
 	public Contacto(Integer idContacto,String nombre, Integer telCasa, Integer telMovil,
-			String correo, String direccion, Integer idUsuario){
+			String correo, String direccion, Usuario idUsuario){
 		super();
 		this.idContacto = idContacto;
 		this.nombre = nombre;

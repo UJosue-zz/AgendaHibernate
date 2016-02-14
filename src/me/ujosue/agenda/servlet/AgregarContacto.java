@@ -23,7 +23,7 @@ public class AgregarContacto extends HttpServlet {
 				Integer.parseInt(req.getParameter("txtTelMovil")),
 				req.getParameter("txtCorreo"),
 				req.getParameter("txtDireccion"),
-				user.getIdUsuario()
+				user
 				);	
 		Conexion.getInstancia().agregar(nuevoContacto);
 		
