@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="me.ujosue.agenda.bean.Usuario" table="Usuario">
+	    <id name="idUsuario" type="java.lang.Integer">
+            <column name="idUsuario" />
+            <generator class="increment" />
+        </id>
+        <property name="nombre" type="java.lang.String">
+            <column name="nombre" />
+        </property>
+        <property name="correo" type="java.lang.String">
+            <column name="correo" />
+        </property>
+        <property name="nick" type="java.lang.String">
+            <column name="nick" />
+        </property>
+        <property name="contrasena" type="java.lang.String">
+            <column name="contrasena" />
+        </property>
+	</class>
+</hibernate-mapping>
