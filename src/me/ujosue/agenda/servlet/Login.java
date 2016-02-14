@@ -26,8 +26,10 @@ public class Login extends HttpServlet {
 		List<Object> usuarios = Conexion.getInstancia().autenticar(req.getParameter("txtUsuario"), Encriptar.getInstancia().getMD5(req.getParameter("txtContrasena")));
 		if(usuarios!=null && usuarios.size()>0){
 			HttpSession sesion = req.getSession(true);
-			sesion.setAttribute("usuario", (Usuario)usuarios.get(0));
+			Usuario user = (Usuario) usuarios.get(0);
+			sesion.setAttribute("usuario", user);
 			despachador=req.getRequestDispatcher("agenda/inicio.jsp");
+			req.setAttribute("listaContacto", Conexion.getInstancia().listar("FROM Contacto c where c.idUsuario='"+user.getIdUsuario()+"'"));
 			System.out.println("Sesion iniciada");
 		}else{
 			req.setAttribute("error", "verifica tus credenciales");
