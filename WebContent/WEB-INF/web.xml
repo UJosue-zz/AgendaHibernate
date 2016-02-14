@@ -44,4 +44,20 @@
     <servlet-name>EliminarContacto</servlet-name>
     <url-pattern>/EliminarContacto.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>CargarContacto</servlet-name>
+    <servlet-class>me.ujosue.agenda.servlet.CargarContacto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CargarContacto</servlet-name>
+    <url-pattern>/CargarContacto.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EditarContacto</servlet-name>
+    <servlet-class>me.ujosue.agenda.servlet.EditarContacto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditarContacto</servlet-name>
+    <url-pattern>/EditarContacto.do</url-pattern>
+  </servlet-mapping>
 </web-app>
