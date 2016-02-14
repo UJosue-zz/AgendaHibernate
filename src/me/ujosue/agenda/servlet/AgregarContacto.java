@@ -26,7 +26,7 @@ public class AgregarContacto extends HttpServlet {
 				user
 				);	
 		Conexion.getInstancia().agregar(nuevoContacto);
-		
+		req.setAttribute("listaContacto", Conexion.getInstancia().listar("FROM Contacto c where c.idUsuario='"+user.getIdUsuario()+"'"));
 		RequestDispatcher despachador=null;
 		despachador=req.getRequestDispatcher("agenda/inicio.jsp");
 		despachador.forward(req, res);
