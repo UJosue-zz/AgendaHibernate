@@ -4,7 +4,7 @@
 	<class name="me.ujosue.agenda.bean.Usuario" table="Usuario">
 	    <id name="idUsuario" type="java.lang.Integer">
             <column name="idUsuario" />
-            <generator class="assigned" />
+            <generator class="increment" />
         </id>
         <property name="nombre" type="java.lang.String">
             <column name="nombre" />

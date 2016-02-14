@@ -17,7 +17,7 @@ public class AgregarContacto extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse res)throws IOException,ServletException{
 		HttpSession sesion= (HttpSession) req.getSession();
 		Usuario user = (Usuario) sesion.getAttribute("usuario");
-		Contacto nuevoContacto = new Contacto(0,
+		Contacto nuevoContacto = new Contacto(null,
 				req.getParameter("txtNombre"),
 				Integer.parseInt(req.getParameter("txtTelCasa")),
 				Integer.parseInt(req.getParameter("txtTelMovil")),

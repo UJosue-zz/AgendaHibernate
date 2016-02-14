@@ -2,11 +2,9 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 	<class name="me.ujosue.agenda.bean.Contacto" table="Contacto">
-	    <id name="idContacto" type="java.lang.Integer">
+	    <id name="idContacto" type="java.lang.Integer" unsaved-value="0">
             <column name="idContacto" />
-            <generator class="sequence-identity" >
-        <param name="sequence">PRODUCT_ID_SEQ</param>
-    </generator>
+            <generator class="increment" />
         </id>
         <property name="nombre" type="java.lang.String">
             <column name="nombre" />

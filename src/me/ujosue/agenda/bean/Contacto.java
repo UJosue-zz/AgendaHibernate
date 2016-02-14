@@ -1,6 +1,6 @@
 package me.ujosue.agenda.bean;
 
-public class Contacto {
+public class Contacto { 
 	private Integer idContacto;
 	private String nombre;
 	private Integer telCasa;
